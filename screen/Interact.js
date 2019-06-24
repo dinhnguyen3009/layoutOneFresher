@@ -43,7 +43,9 @@ export default function Interact(props) {
               <Icon name='send' type='material-community'color='#E0E0E0' backgroundColor='#481708' size={18}
               onPress={() => {
                 let arr = listComment.concat({id:Math.random().toString(),imageUser:require('./../pic/user1.png'),user:'Dinh',comment:comment})  
-                setListComment(arr)}}
+                setListComment(arr)
+                setComment('')
+            }}
               />
         </View>
         
